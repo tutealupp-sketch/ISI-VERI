@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISI & VERI EMPRENDEN</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffd6f5, #d6f0ff);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #ff7ac8;
+      color: white;
+      padding: 25px 15px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      color: #ff4fa7;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .galeria img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: block;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #ff7ac8;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* Modal */
+    #modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px black;
+    }
+
+    #cerrar {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  💗 ISI & VERI EMPRENDEN 💗<br>
+  Pulseras • Collares • Llaveros • Tobilleras • Cerámica
+</header>
+
+<section>
+  <h2>✨ Mis Productos ✨</h2>
+
+  <div class="galeria">
+    <img src="imagenes/foto1.jpg" alt="Producto 1">
+    <img src="imagenes/foto2.jpg" alt="Producto 2">
+    <img src="imagenes/foto3.jpg" alt="Producto 3">
+    <img src="imagenes/foto4.jpg" alt="Producto 4">
+    <img src="imagenes/foto5.jpg" alt="Producto 5">
+    <img src="imagenes/foto6.jpg" alt="Producto 6">
+    <img src="imagenes/foto7.jpg" alt="Producto 7">
+    <img src="imagenes/foto8.jpg" alt="Producto 8">
+    <img src="imagenes/foto9.jpg" alt="Producto 9">
+    <img src="imagenes/foto10.jpg" alt="Producto 10">
+    <img src="imagenes/foto11.jpg" alt="Producto 11">
+    <img src="imagenes/foto12.jpg" alt="Producto 12">
+    <img src="imagenes/foto13.jpg" alt="Producto 13">
+    <img src="imagenes/foto14.jpg" alt="Producto 14">
+    <img src="imagenes/foto15.jpg" alt="Producto 15">
+    <img src="imagenes/foto16.jpg" alt="Producto 16">
+    <img src="imagenes/foto17.jpg" alt="Producto 17">
+    <img src="imagenes/foto18.jpg" alt="Producto 18">
+    <img src="imagenes/foto19.jpg" alt="Producto 19">
+    <img src="imagenes/foto20.jpg" alt="Producto 20">
+    <img src="imagenes/foto21.jpg" alt="Producto 21">
+    <img src="imagenes/foto22.jpg" alt="Producto 22">
+    <img src="imagenes/foto23.jpg" alt="Producto 23">
+    <img src="imagenes/foto24.jpg" alt="Producto 24">
+    <img src="imagenes/foto25.jpg" alt="Producto 25">
+    <img src="imagenes/foto26.jpg" alt="Producto 26">
+    <img src="imagenes/foto27.jpg" alt="Producto 27">
+    <img src="imagenes/foto28.jpg" alt="Producto 28">
+    <img src="imagenes/foto29.jpg" alt="Producto 29">
+    <img src="imagenes/foto30.jpg" alt="Producto 30">
+    <img src="imagenes/foto31.jpg" alt="Producto 31">
+    <img src="imagenes/foto32.jpg" alt="Producto 32">
+    <img src="imagenes/foto33.jpg" alt="Producto 33">
+    <img src="imagenes/foto34.jpg" alt="Producto 34">
+    <img src="imagenes/foto35.jpg" alt="Producto 35">
+    <img src="imagenes/foto36.jpg" alt="Producto 36">
+    <img src="imagenes/foto37.jpg" alt="Producto 37">
+    <img src="imagenes/foto38.jpg" alt="Producto 38">
+    <img src="imagenes/foto39.jpg" alt="Producto 39">
+    <img src="imagenes/foto40.jpg" alt="Producto 40">
+    <img src="imagenes/foto41.jpg" alt="Producto 41">
+    <img src="imagenes/foto42.jpg" alt="Producto 42">
+  </div>
+</section>
+
+<section>
+  <h2>📲 Contacto</h2>
+  <p style="font-size:18px;">Pedidos por WhatsApp</p>
+  <p>
+    <a href="https://wa.me/5490000000000" style="color:#ff4fa7;font-weight:bold;text-decoration:none;font-size:18px;">
+      👉 Escribinos acá
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 VERA EMPRENDE - Hecho con 💕
+</footer>
+
+<!-- Modal -->
+<div id="modal">
+  <span id="cerrar">&times;</span>
+  <img id="modalImg">
+</div>
+
+<script>
+  const imagenes = document.querySelectorAll('.galeria img');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modalImg');
+  const cerrar = document.getElementById('cerrar');
+
+  imagenes.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+    });
+  });
+
+  cerrar.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
